@@ -59,7 +59,8 @@ public class StartQuiz extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //click vào nút back
-                onBackPressed();
+                //onBackPressed();
+                finish();
             }
         });
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {

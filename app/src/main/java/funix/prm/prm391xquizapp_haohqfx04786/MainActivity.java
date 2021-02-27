@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         name =intent.getStringExtra("info");
         textName.setText("Name: "+name);
 
+
         //Sự kiện khi bấm nút submit
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //gọi đến hàm kiểm tra
                 checkQuizAndAnswer();
+
             }
         });
     }
@@ -75,9 +77,8 @@ public class MainActivity extends AppCompatActivity {
         Timer = new CountDownTimer(60000,1000) {
             @Override
             public void onTick(long millisUntilFinished) {
-                buttonCountDown.setText("Time: "+ millisUntilFinished / 1000);
+                buttonCountDown.setText("Time: 00:"+ millisUntilFinished / 1000);
             }
-
             //kiểm tra đáp án và kết thúc Activity
             @Override
             public void onFinish() {
@@ -87,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }.start();
     }
+
 
     //Chấm điểm
     public void checkQuizAndAnswer() {
