@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/margin_LR"
+    android:layout_marginStart="@dimen/margin_LR"
+    android:layout_marginTop="@dimen/space">
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nh_p_th_ng_tin"
+        android:gravity="center"
+        android:textSize="@dimen/text"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space"/>
+    <EditText
+        android:id="@+id/inputName"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="@dimen/margin_LR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nh_p_h_t_n"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_t_u"
+            android:layout_gravity="center" />
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thoat"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

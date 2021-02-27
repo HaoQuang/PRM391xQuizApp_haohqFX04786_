@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_LR">16dp</dimen>
+    <dimen name="edittext">200dp</dimen>
+    <dimen name="text">30sp</dimen>
+    <dimen name="textsmall">20sp</dimen>
+    <dimen name="space">50dp</dimen>
+    <dimen name="width0">0dp</dimen>
+</resources>
